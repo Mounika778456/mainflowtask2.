@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Sports Event</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background: #965e5e;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        nav .logo h2 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Dropdown Menu */
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            background: #965e5e;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        nav ul li .dropdown a:hover {
+            background: #f39c12;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('https://executiveevents.in/Userfiles/services/bd7da85ccb1f46caa4cb864d7e260f6e.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            color: rgb(247, 243, 241);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 80px; /* Account for fixed navbar */
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        /* Form Styling */
+        .register-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-form input,
+        .register-form select,
+        .register-form textarea,
+        .register-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .register-form button {
+            background: #965e5e;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background: #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h2>Ultimate Sports Event</h2>
+        </div>
+        <ul>
+            <li><a href="https://www.1sports1.com/wp-content/uploads/2018/03/50-sports-events.jpg">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Sport">About</a></li>
+            <li>
+                <a href="#schedule">Schedule</a>
+                <div class="dropdown">
+                    <a href="https://crictrends.in/wpl/wpl-2025/">Day 1</a>
+                    <a href="https://crictrends.in/ipl/ipl-2025/">Day 2</a>
+                    <a href="https://crictrends.in/icc-champions-trophy-2025/">Day 3</a>
+                </div>
+            </li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Get Ready for the Ultimate Sports Event!</h1>
+        <p>Join athletes from around the world for an exciting day of competition, fun, and community spirit. Don't miss out!</p>
+    </section>
+
+    <!-- Placeholder Sections -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>The Ultimate Sports Event brings together athletes of all skill levels for an unforgettable experience. From intense competitions to community engagement, this event has it all!</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <p>Check out our exciting lineup of events happening over the three days of the Ultimate Sports Event!</p>
+    </section>
+</body>
+
+</html> <section id="register">
+    <h2>Register Now</h2>
+    <p>Secure your spot and join us for the event of a lifetime. We can’t wait to see you there!</p>
+
+    <form  class="register-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="event" required>
+            <option value="" disabled selected>Select Event</option>
+            <option value="running">Running</option>
+            <option value="swimming">Swimming</option>
+            <option value="cycling">Cycling</option>
+            <option value="team_sports">Team Sports</option>
+        </select>
+        <textarea name="comments" placeholder="Additional Comments (Optional)"></textarea>
+        <button type="submit">Register</button>
+    </form>
+</section>
